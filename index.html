@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 
+    <script data-require="angular.js@1.5.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" data-semver="1.5.8"></script>
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
@@ -19,6 +20,12 @@
   </head>
 
   <body>
-    <my-app>Loading...</my-app>
+    <my-app>
+      <p>Name : <input type="text" ng-model="name"></p>
+      <h1>Hello {{name}}</h1>
+      
+
+
+    </my-app>
   </body>
 </html>
